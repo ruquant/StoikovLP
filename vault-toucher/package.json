@@ -1,0 +1,17 @@
+{
+    "name": "lambda-scheduled",
+    "description": "Lambda-Scheduled Event starter project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@pythnetwork/pyth-evm-js": "^1.76.0",
+        "axios": "^1.7.7",
+        "ethers": "^6.13.4"
+    },
+    "devDependencies": {
+        "jest": "^29.5.0"
+    },
+    "scripts": {
+        "test": "jest"
+    }
+}
