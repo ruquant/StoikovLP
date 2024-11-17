@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000B1A;
+  min-height: 100vh;
+  font-family: "Albert Sans", sans-serif;
+  color: #fff !important;
+}
+
+.MuiTypography-root {
+  margin: 0;
+  color: #fff !important;
+}
+
+p {
+  margin: 0;
+}
+
+@keyframes ask-level-flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(229, 67, 34, 0.5);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+  
+@keyframes bid-level-flash {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(0, 178, 148, 0.5);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.highlight-level {
+  &.ask {
+    animation: ask-level-flash 0.5s;
+  }
+
+  &.bid {
+    animation: bid-level-flash 0.5s;  
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.disable-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.MuiTab-root	{
+  color: rgba(255, 255, 242, 0.30) !important;
+
+  &.Mui-selected {
+    color: #fff !important;
+  }
+}
+
+.MuiTabs-indicator {
+  background-color: #fff !important;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: underline;
+}
